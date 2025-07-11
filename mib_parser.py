@@ -1,7 +1,7 @@
-    #######################################################################################################################
+#######################################################################################################################
 #
 #
-#  	Project     	: 	SNMP MIB Parser/Database Loader.
+#  	Project     	: 	SNMP MIB Parser
 #
 #   File            :   mib_parser.py
 #
@@ -13,6 +13,8 @@
 #	By              :   George Leonard ( georgelza@gmail.com )
 #
 #   Created     	:   11 Jul 2025
+#
+#   GIT             :   https://github.com/georgelza/SNMP-MIB-Parser.git
 #
 #   MySQL           :   python mib_parser.py \
 #                           --mib-file mibs/RFC1213-MIB.mib \
@@ -589,7 +591,7 @@ def extractor(args, log):
         log.info(f"Added compiled MIB directory: {compiled_dir}")
         
          # Add standard PySNMP MIB sources
-        stdmibslocations = ["pysnmp_mibs/pysnmp_mibs"]                                     
+        stdmibslocations = ["pysnmp_mibs"]                                     
         
         for stdmibs in stdmibslocations:
             mib_path = os.path.join(base_dir, stdmibs)
@@ -789,6 +791,7 @@ def extractor(args, log):
                     
                     #end if
                 #end for
+                
                 if should_print:
                     print(f"oid:             {oid_string}")
                     print(f"object_name:     {object_name}")

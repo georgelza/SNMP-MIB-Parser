@@ -5,7 +5,7 @@
 #
 #   File            :   utils.py
 #
-#   Description     :
+#   Description     :   Generic File and Console logger.
 #
 #   Created     	:   22 November 2024
 #
