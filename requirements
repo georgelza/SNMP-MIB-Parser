@@ -1,0 +1,6 @@
+pysnmp
+pysmi==1.5.0
+psycopg2-binary 
+mysql-connector-python 
+redis
+
